@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+	<section>
+         <div class="circle"></div>
+		<header>
+			<a href="" class="logo"><img src="img/logo.png" alt=""></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">What's New</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</header>
+		<div class=" content">
+			<div class="text-box">
+				<h2>It's not just Coffee <br>It's <span>Starbucks</span></h2>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta culpa eligendi aliquid, quas illum incidunt, reiciendis ratione excepturi provident rerum nemo facere iste pariatur laborum voluptates quisquam. Veritatis vero hic obcaecati, a tempora ea, ducimus similique cum rerum iusto, sed.</p>
+				<a href="#">Learm More</a>
+			</div>
+			<div class="img-box">
+				<img src="img/img1.png" class="starbucks" alt="">
+			</div>
+			<ul class="thumb">
+				<li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png'); changeCircleColor('#017143')" alt=""></li>
+				<li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png'); changeCircleColor('#eb7495')" alt=""></li>
+				<li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png'); changeCircleColor('#d752b1')" alt=""></li>
+			</ul>
+			<ul class="sci">
+				<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+				<li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+				<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+			</ul>
+		</div>
+	</section>
+
+    <script type="text/javascript">
+    	function imgSlider(anything){
+    		document.querySelector('.starbucks').src = anything;
+    	}
+
+    	function changeCircleColor(color){
+    		const circle = document.querySelector('.circle');
+    		circle.style.background = color;
+    	}
+    </script>
+</body>
+</html>
